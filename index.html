@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>College Event Information</title>
+
+    <!-- Internal CSS -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      nav a {
+        margin-right: 15px;
+        font-weight: bold;
+      }
+
+      /* Link states */
+      a:link {
+        color: blue;
+      }
+
+      a:visited {
+        color: purple;
+      }
+
+      a:hover {
+        color: green;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: red;
+      }
+
+      /* Button styled link */
+      .btn-link {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #3498db;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      .btn-link:hover {
+        background-color: #217dbb;
+        text-decoration: none;
+      }
+      .btn-link:link,
+      .btn-link:visited {
+        color: white;
+      }
+      .btn-link:active {
+        color: red;
+      }
+
+      img {
+        margin: 10px 0;
+        border: 2px solid #ccc;
+      }
+
+      section {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Main Heading -->
+    <h1>Annual Tech Fest 2026</h1>
+
+    <!-- Navigation using bookmarks -->
+    <nav>
+      <a href="#details">Event Details</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact Information</a>
+    </nav>
+
+    <!-- Main Image -->
+    <img
+      src="eventPoster.jpg"
+      alt="College Tech Event Banner"
+      width="600"
+      height="300"
+    />
+
+    <!-- Event Details Section -->
+    <section id="details">
+      <h2>Event Details</h2>
+
+      <p>
+        The Annual Tech Fest brings together students to explore innovation,
+        technology, and creativity through workshops and competitions.
+      </p>
+
+      <!-- Absolute URL -->
+      <p>
+        Visit the official website:
+        <a
+          href="https://www.iitm.ac.in"
+          target="_blank"
+          title="Official Event Website"
+        >
+          Click Here
+        </a>
+      </p>
+
+      <!-- Relative URL -->
+      <p>
+        Read event rules:
+        <a href="rules.html"> Event Rules </a>
+      </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+
+      <!-- Image as a link -->
+      <a href="clickImage.html" target="_blank">
+        <img
+          src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b"
+          alt="Previous Event Photo 1"
+          width="300"
+          height="200"
+        />
+      </a>
+
+      <img
+        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+        alt="Previous Event Photo 2"
+        width="300"
+        height="200"
+      />
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact">
+      <h2>Contact Information</h2>
+
+      <!-- Mailto link -->
+      <p>
+        Email us at:
+        <a href="mailto:event@college.edu"> event@college.edu </a>
+      </p>
+
+      <!-- Button redirect using onclick -->
+      <button onclick="window.location.href = 'register.html'">
+        Register for Event
+      </button>
+
+      <br /><br />
+
+      <!-- Styled link as button -->
+      <a href="website.html" class="btn-link" target="_blank">
+        Visit College Website
+      </a>
+    </section>
+  </body>
+</html>
